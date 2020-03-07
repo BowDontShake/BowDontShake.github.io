@@ -1,50 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
     <meta charset="utf-8">
-    <meta name="description" content="Bow, Don't Shake!">
-    <meta name="author" content="David Booth">
-    <title>Bow, Don't Shake!</title>
-  </head>
-  <body>
-    <h1><img src="images/bow-157x157.png" title="Bow" alt="Two people
-        bowing gently to each other" width="100" height="100"> Bow,
-      Don't Shake! <img src="images/dont-shake-157x157.png"
-        title="Don't Shake!" alt="Handshake with 'prohibited' symbol
-        over it" width="100" height="100"><br>
-    </h1>
-    A public health initiative to reduce disease transmission.&nbsp;
-    Spread the word -- not the disease!<br>
-    <br>
-    Poster and other downloads available:<br>
-    <blockquote><a href="downloads/bow-dont-shake-17x11.pdf"><img
-          src="images/bow-dont-shake-17x11-icon-163.png" title="Download
-          Bow, Don't Shake! -- Poster 17x11 inches" alt="Bow, Don't
-          Shake! -- Poster 17x11 inches" width="163" height="105"
-          border="2"></a> Poster 17x11 inches - PDF<br>
-      <a href="downloads/bow-dont-shake-11x8_5.pdf"><img
-          src="images/bow-dont-shake-11x8_5-icon-105.png" title="Flyer -
-          11x8.5 inches" alt="'Bow, Don't Shake!' flyer - 11x8.5 inches"
-          width="105" height="81" border="2"></a> Flyer 11x8.5 inches -
-      PDF<br>
-      <a href="downloads/bow-dont-shake-1600x900.png"><img
-          src="images/bow-dont-shake-1600x900-icon-160.png" title="Bow,
-          Don't Shake - Screen saver 1600x900" alt="Bow, Don't Shake -
-          Screen saver 1600x900" width="160" height="90" border="2"></a>
-      Screen saver image 1600x900 pixels - PNG<br>
-      <a href="downloads/bow-dont-shake-3_5x2.pdf"><img
-          src="images/bow-dont-shake-3_5x2-icon-140.png" title="Bow
-          Don't Shake - Business card" alt="Bow Don't Shake - Business
-          card" width="140" height="80" border="2"></a> Business card
-      3.5x2 inches - PDF<br>
-    </blockquote>
-    <p>All content is free for unlimited use: <a
-        href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a></p>
-    <p>Want to help?&nbsp; <a
-        href="https://github.com/BowDontShake/BowDontShake.github.io">We're
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://html5-templates.com/" />
+    <title>HTML Template - Full Page Slider Navigation</title>
+    <meta name="description" content="A brief page description">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-        on github</a>.&nbsp; Contact <a href="mailto:david@dbooth.org">david@dbooth.org</a><br>
-      <a href="https://creativecommons.org/publicdomain/zero/1.0/"></a></p>
-  </body>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+              sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+              anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+              menu: '#menu',
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+
+<ul id="menu">
+    <li data-menuanchor="first" class="active"><a href="#firstPage">First</a></li>
+    <li data-menuanchor="second"><a href="#secondPage">Second</a></li>
+    <li data-menuanchor="third"><a href="#3rdPage">Third</a></li>
+</ul>
+
+<div id="fullpage">
+	
+    <div class="section " id="section0">
+        <h1>CloudVistA</h1>
+        <p>Transforming healthcare in the Cloud</p>
+        <p class="introimg">&darr;&#9636;&darr;</p>
+    </div>
+	
+	
+	
+    <div class="section active" id="section1">
+        <div class="slide" id="slide1">
+            <div class="intro">
+                <h1>First Slide</h1>
+		<img src="images/landing-page-graphic-only-819x363.png" alt="Bowgently, don't shake hands!" align="middle" style="width:90%">
+                <p>Keep scrolling down</p>
+            </div>
+        </div>
+        <div class="slide active" id="slide2">
+            <h1>Slide 2</h1>
+		<img src="cloud-stars.png" alt="cloud-stars" align="middle" style="width:90%">
+		<p>You can also scroll left or right on this screen</p>
+        </div>
+        <div class="slide" id="slide3">
+            <h1>Slide 3</h1>
+        </div>
+
+    </div>
+	
+	
+    <div class="section" id="section2">
+        <div class="intro">
+            <h1>The End</h1>
+            <p>You reached the bottom of the page</p>
+        </div>
+    </div>
+</div>
+
+</body>
+
 </html>
