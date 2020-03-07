@@ -334,7 +334,8 @@ p {
 	color: #000;
 }
 #menu li:hover{
-	background: rgba(255,255,255, 0.8);
+	filter: invert(100%);
+	# background: rgba(255,255,255, 0.8);
 }
 #menu li a,
 #menu li.active a{
