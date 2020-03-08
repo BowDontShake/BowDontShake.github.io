@@ -26,30 +26,30 @@ body {
 }
 
 .section {
-	padding-top: 50px;
+	padding-top: 35px;
 }
 
 .home {
-	padding-top: 30px;
+	padding-top: 20px;
 }
 
 #navbar {
   top: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #555;
     position: fixed;
 
 }
 
 
 #navbar a {
-  float: left;
+  float: center;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 9px 12px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 12px;
 }
 
 
