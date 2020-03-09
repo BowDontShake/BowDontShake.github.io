@@ -9,25 +9,32 @@ body {
 	min-height: 100vh;
 }
 
+
 .logo {
-	color: #e0e2e6;
+	margin: 0;
+	font-size: .99em;
+}
+.logo a {
+	color: #dddcdc;
 	padding: 1px 5px;
 	text-transform: uppercase;
 	text-align: center;
 	display: block;
+	margin: 0;
 }
 
 .main-nav {
-  margin: 0;
-  padding: 1;
-  list-style: none;
-  margin-top: 1px;
-}
+	margin: 0;
+	padding: 1;
+	list-style: none;
+	margin-top: 1px;
+  }
+
 
 .main-nav a {
-	color: #b5b6b8;
-	padding: 1px 5px;
-/*	text-transform: uppercase;   */
+	color: #dddcdc;
+	padding: 0px 10px;
+/*	text-transform: uppercase;  */
 	text-align: center;
 	display: block;
 	font-size: .99em;
@@ -60,7 +67,7 @@ h1 {
 	text-align: center
 }
 
-h2, h3, a {
+h2, h3 {
 	color: #34495e;
 }
 
@@ -69,16 +76,13 @@ p, li {
 }
 
 a {
+	color: #34495e;
 }
 
 .menuItem {
 	text-decoration: none;
 }
 
-.logo {
-	margin: 0;
-	font-size: .89em;
-}
 
 
 /* Adaptive image size
