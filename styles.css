@@ -19,6 +19,7 @@ p {
 .logo {
 	margin: 0;
 	font-size: .99em;
+	padding-right:  4em;
 }
 .logo a {
 	color: #dddcdc;
