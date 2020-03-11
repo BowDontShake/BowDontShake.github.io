@@ -9,6 +9,9 @@ body {
 	min-height: 100vh;
 }
 
+.section {
+	padding-top: 4em;
+}
 
 .logo {
 	margin: 0;
