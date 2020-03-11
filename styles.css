@@ -27,6 +27,7 @@ p {
 	text-align: center;
 	display: block;
 	margin: 0;
+	vertical-align: middle;
 }
 
 .main-nav {
