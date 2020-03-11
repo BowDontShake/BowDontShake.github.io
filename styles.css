@@ -19,11 +19,10 @@ p {
 .logo {
 	margin: 0;
 	font-size: .99em;
-	padding-right:  4em;
 }
 .logo a {
 	color: #dddcdc;
-	padding: 1px 5px;
+	padding: 1px 1px;
 	text-transform: uppercase;
 	text-align: center;
 	display: block;
