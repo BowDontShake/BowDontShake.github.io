@@ -20,5 +20,5 @@ popd
 
 # Add up the USA daily counts.  The result is a CSV file with only 
 # a header row and one data row, with the totals for all USA areas.
-perl ./total-usa.perl ~/covid19/COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv > covid-19-usa-totals.csv 
+perl src/total-usa.perl ~/covid19/COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv > covid-19-usa-totals.csv 
 

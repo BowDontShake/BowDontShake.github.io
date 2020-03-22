@@ -46,6 +46,6 @@ while (my $line = <>) {
 
 my $totals = join(",", @total);
 print "$header\n";
-print "All,US,$totals\n";
+print "All,US,38,97,$totals\n";
 exit 0;
 
