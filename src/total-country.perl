@@ -2,6 +2,11 @@
 
 # Total COVID-19 counts for USA.
 
+# Usage:
+#
+#	perl src/total-usa.perl US < time_series_19-covid-Confirmed.csv > covid-19-usa-totals.csv 
+#	perl src/total-usa.perl China < time_series_19-covid-Confirmed.csv > covid-19-china-totals.csv 
+#
 # Input is CSV with header, like this:
 #
 #	Province/State,Country/Region,Lat,Long,1/22/20,1/23/20
@@ -12,6 +17,11 @@
 
 # Author: David Booth
 # License: CC0
+
+# Argument should be "US", "China" or some other country name.
+my $country = shift @ARGV || die;
+die if $country =~ m/,/;
+my $qCountry = quotemeta($country);
 
 my @total = ();
 my $header = <>;
@@ -32,7 +42,7 @@ while (my $line = <>) {
 	# Ignore empty lines:
 	next if $line !~ m/\S/;		
 	# Skip non-US and trim off the first four columns:
-	next if $line !~ s/^.*,\s*US\s*,[^,]*,[^,]*,//i;
+	next if $line !~ s/^.*,\s*$qCountry\s*,[^,]*,[^,]*,//i;
 	# Delete leading and trailing whitespace:
 	$line =~ s/^\s+//;
 	$line =~ s/\s+$//;
@@ -46,6 +56,6 @@ while (my $line = <>) {
 
 my $totals = join(",", @total);
 print "$header\n";
-print "All,US,38,97,$totals\n";
+print "All,$country,,,$totals\n";
 exit 0;
 
