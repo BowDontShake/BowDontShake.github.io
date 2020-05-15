@@ -19,5 +19,4 @@ jobs:
         run: |
           echo First line
           echo Second line
-          exit 1
 
