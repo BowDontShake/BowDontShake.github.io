@@ -1,4 +1,4 @@
-name: Hello testing
+name: nominal-testing
 # This workflow will be triggered by a push to master.
 
 on:
